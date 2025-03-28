@@ -1,0 +1,27 @@
+// src/App.js
+import React, { useState } from "react";
+import "./App.css";
+
+function App() {
+  const [message, setMessage] = useState("Hello, Netlify!");
+
+  return (
+    <div className="container">
+      <h1>{message}</h1>
+      <button onClick={() => setMessage("Deployed on Netlify!")}>Change Text</button>
+    </div>
+  );
+}
+
+export default App;
+
+// src/App.css
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
